@@ -295,6 +295,24 @@ def run_automated_tests():
             [3, 2, 3, 2, 3, 4], # X has three in col 3. 
             3,                  # AI (X) should play 3 to win.
             PLAYER_X
+        ),
+        (
+            "Test 5: Draw case (Board almost full, 2 moves left)",
+            [
+                # Fill columns 0 and 1 without winning
+                0, 1, 0, 1, 0, 1,
+                1, 0, 1, 0, 1, 0,
+                # Fill columns 2 and 3 without winning
+                2, 3, 2, 3, 2, 3,
+                3, 2, 3, 2, 3, 2,
+                # Fill columns 4 and 5 without winning
+                4, 5, 4, 5, 4, 5,
+                5, 4, 5, 4, 5, 4,
+                # Fill 4 pieces into column 6, leaving only 2 empty spots on the entire board
+                6, 6, 6, 6
+            ],
+            6,               # AI MUST play 6 because it's the only column with empty space
+            PLAYER_X         # 40 moves have passed, so it's X's turn again
         )
     ]
 
