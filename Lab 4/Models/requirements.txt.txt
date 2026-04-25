@@ -1,0 +1,4 @@
+Libraries required for running python code: 
+	pandas
+	numpy
+	scikit-learn
