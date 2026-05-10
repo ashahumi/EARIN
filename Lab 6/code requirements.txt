@@ -1,0 +1,11 @@
+This repository contains a Python implementation of the Q-Learning algorithm from scratch, designed to solve the continuous-state `MountainCar-v0` environment using state space quantization.
+
+## 📋 Requirements
+To run this code, you will need Python 3 installed on your machine along with a few external libraries:
+        1. gymnasium
+        2. numpy
+        3. matplotlib
+
+You can install all the required dependencies using `pip`:
+
+pip install gymnasium numpy matplotlib
