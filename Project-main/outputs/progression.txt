@@ -1,0 +1,24 @@
+output1:
+        - mostly default models 
+        - 5,000 words in memory
+        - 50k dataset entries (first 50k extracted from the dataset without modification)
+
+output2:
+        - unchanged
+        - unchanged
+        - 50k dataset entries (10k for each 1-5 grade, shuffled)
+
+output3:
+        - tweaked models
+        - 10,000 words in memory
+        - unchanged
+
+output4:
+        - unchanged
+        - 5,000 words in memory
+        - unchanged
+
+output5:
+        - updated models
+        - unchanged
+        - unchanged
