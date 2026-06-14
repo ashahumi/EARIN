@@ -1,0 +1,48 @@
+============================================================
+HYPERPARAMETER OPTIMIZATION (Grid Search)
+[SYSTEM] Live output is also being saved to: output_6.txt
+============================================================
+
+Loading dataset...
+Loading data from D:\University and Studies\Computer Science\26L\EARIN\Project\dataset\my_50k_reviews.csv...
+Splitting data into train and test sets...
+Applying base text cleaning (lowercasing, removing punctuation)...
+
+Initializing GridSearchCV...
+Grid configurations to test: 144
+Cross-validation folds: 3
+--------------------------------------------------
+
+Fitting 3 folds for each of 144 candidates, totalling 432 fits
+
+============================================================
+GRID SEARCH COMPLETED!
+============================================================
+Best cross-validation accuracy: 0.4693
+
+BEST PARAMETERS FOUND:
+ - mlp__activation: relu
+ - mlp__alpha: 0.1
+ - mlp__hidden_layer_sizes: (100,)
+ - tfidf__max_df: 0.5
+ - tfidf__max_features: 5000
+ - tfidf__ngram_range: (1, 2)
+
+============================================================
+FINAL EVALUATION ON UNSEEN TEST DATA (10k Reviews)
+============================================================
+
+Final Test Accuracy: 0.4716
+
+              precision    recall  f1-score   support
+
+         1.0       0.54      0.64      0.59      2000
+         2.0       0.44      0.32      0.37      2000
+         3.0       0.39      0.41      0.40      2000
+         4.0       0.42      0.33      0.37      2000
+         5.0       0.52      0.66      0.58      2000
+
+    accuracy                           0.47     10000
+   macro avg       0.46      0.47      0.46     10000
+weighted avg       0.46      0.47      0.46     10000
+

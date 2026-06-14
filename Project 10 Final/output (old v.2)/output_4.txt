@@ -1,0 +1,23 @@
+============================================================
+HYPERPARAMETER OPTIMIZATION (Grid Search)
+[SYSTEM] Live output is also being saved to: output_4.txt
+============================================================
+
+Loading dataset...
+Loading data from D:\University and Studies\Computer Science\26L\EARIN\Project\dataset\my_50k_reviews.csv...
+Splitting data into train and test sets...
+Applying base text cleaning (lowercasing, removing punctuation)...
+
+Initializing GridSearchCV...
+Grid configurations to test: 144
+Cross-validation folds: 3
+--------------------------------------------------
+
+Fitting 3 folds for each of 144 candidates, totalling 432 fits
+[CV 1/3] END mlp__activation=tanh, mlp__alpha=0.01, mlp__hidden_layer_sizes=(100,), tfidf__max_df=0.85, tfidf__max_features=4000, tfidf__ngram_range=(1, 1);, score=0.462 total time=  27.7s
+[CV 2/3] END mlp__activation=tanh, mlp__alpha=0.01, mlp__hidden_layer_sizes=(100,), tfidf__max_df=0.85, tfidf__max_features=4000, tfidf__ngram_range=(1, 1);, score=0.453 total time=  29.4s
+[CV 3/3] END mlp__activation=tanh, mlp__alpha=0.01, mlp__hidden_layer_sizes=(100,), tfidf__max_df=0.85, tfidf__max_features=4000, tfidf__ngram_range=(1, 1);, score=0.460 total time=  27.7s
+[CV 1/3] END mlp__activation=tanh, mlp__alpha=0.01, mlp__hidden_layer_sizes=(100,), tfidf__max_df=0.85, tfidf__max_features=4000, tfidf__ngram_range=(1, 2);, score=0.461 total time=  35.4s
+[CV 2/3] END mlp__activation=tanh, mlp__alpha=0.01, mlp__hidden_layer_sizes=(100,), tfidf__max_df=0.85, tfidf__max_features=4000, tfidf__ngram_range=(1, 2);, score=0.460 total time=  35.3s
+[CV 3/3] END mlp__activation=tanh, mlp__alpha=0.01, mlp__hidden_layer_sizes=(100,), tfidf__max_df=0.85, tfidf__max_features=4000, tfidf__ngram_range=(1, 2);, score=0.450 total time=  34.1s
+[CV 1/3] END mlp__activation=tanh, mlp__alpha=0.01, mlp__hidden_layer_sizes=(100,), tfidf__max_df=0.85, tfidf__max_features=5000, tfidf__ngram_range=(1, 1);, score=0.467 total time=  33.7s

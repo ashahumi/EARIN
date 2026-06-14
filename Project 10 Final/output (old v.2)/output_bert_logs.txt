@@ -1,0 +1,98 @@
+
+Loading dataset labels...
+Loading data from D:\University and Studies\Computer Science\26L\EARIN\Project\Project-main\dataset\my_50k_reviews.csv...
+Splitting data into train and test sets...
+Loading pre-computed BERT embeddings from disk...
+BERT Training Data Shape: (40000, 384)
+
+Initializing GridSearchCV...
+Grid configurations to test: 18
+Cross-validation folds: 3
+--------------------------------------------------
+
+Fitting 3 folds for each of 18 candidates, totalling 54 fits
+
+============================================================
+GRID SEARCH COMPLETED (BERT)!
+============================================================
+Best cross-validation accuracy: 0.4278
+
+BEST PARAMETERS FOUND:
+ - activation: relu
+ - alpha: 0.1
+ - hidden_layer_sizes: (256, 128)
+
+============================================================
+FINAL EVALUATION ON UNSEEN TEST DATA (BERT)
+============================================================
+
+Final Test Accuracy: 0.4286
+
+              precision    recall  f1-score   support
+
+         1.0       0.49      0.61      0.54      2000
+         2.0       0.35      0.39      0.37      2000
+         3.0       0.36      0.23      0.28      2000
+         4.0       0.38      0.32      0.35      2000
+         5.0       0.50      0.60      0.55      2000
+
+    accuracy                           0.43     10000
+   macro avg       0.42      0.43      0.42     10000
+weighted avg       0.42      0.43      0.42     10000
+
+[CV 2/3] END activation=tanh, alpha=0.01, hidden_layer_sizes=(256, 128);, score=0.418 total time=  31.0s
+[CV 3/3] END activation=tanh, alpha=0.1, hidden_layer_sizes=(100,);, score=0.423 total time=  18.8s
+[CV 2/3] END activation=relu, alpha=0.01, hidden_layer_sizes=(256, 128);, score=0.429 total time=  22.4s
+[CV 3/3] END activation=relu, alpha=0.05, hidden_layer_sizes=(128, 64);, score=0.430 total time=  15.8s
+[CV 1/3] END activation=tanh, alpha=0.01, hidden_layer_sizes=(100,);, score=0.417 total time=  14.9s
+[CV 1/3] END activation=tanh, alpha=0.05, hidden_layer_sizes=(128, 64);, score=0.415 total time=  30.9s
+[CV 1/3] END activation=relu, alpha=0.01, hidden_layer_sizes=(256, 128);, score=0.411 total time=  30.0s
+[CV 3/3] END activation=relu, alpha=0.1, hidden_layer_sizes=(100,);, score=0.420 total time=  13.1s
+[CV 3/3] END activation=tanh, alpha=0.01, hidden_layer_sizes=(128, 64);, score=0.419 total time=  14.5s
+[CV 3/3] END activation=tanh, alpha=0.05, hidden_layer_sizes=(256, 128);, score=0.417 total time=  47.7s
+[CV 2/3] END activation=relu, alpha=0.05, hidden_layer_sizes=(256, 128);, score=0.430 total time=  26.8s
+[CV 2/3] END activation=tanh, alpha=0.05, hidden_layer_sizes=(100,);, score=0.419 total time=  14.7s
+[CV 2/3] END activation=tanh, alpha=0.05, hidden_layer_sizes=(128, 64);, score=0.422 total time=  26.4s
+[CV 2/3] END activation=relu, alpha=0.01, hidden_layer_sizes=(100,);, score=0.422 total time=  11.7s
+[CV 1/3] END activation=relu, alpha=0.01, hidden_layer_sizes=(128, 64);, score=0.420 total time=  16.8s
+[CV 1/3] END activation=relu, alpha=0.05, hidden_layer_sizes=(128, 64);, score=0.417 total time=  21.4s
+[CV 3/3] END activation=tanh, alpha=0.05, hidden_layer_sizes=(100,);, score=0.418 total time=  17.6s
+[CV 1/3] END activation=tanh, alpha=0.1, hidden_layer_sizes=(100,);, score=0.420 total time=  16.8s
+[CV 1/3] END activation=tanh, alpha=0.1, hidden_layer_sizes=(128, 64);, score=0.421 total time=  25.9s
+[CV 1/3] END activation=relu, alpha=0.05, hidden_layer_sizes=(256, 128);, score=0.423 total time=  34.0s
+[CV 1/3] END activation=tanh, alpha=0.01, hidden_layer_sizes=(128, 64);, score=0.415 total time=  32.2s
+[CV 1/3] END activation=tanh, alpha=0.1, hidden_layer_sizes=(256, 128);, score=0.415 total time=  27.4s
+[CV 2/3] END activation=relu, alpha=0.05, hidden_layer_sizes=(100,);, score=0.419 total time=   7.7s
+[CV 3/3] END activation=relu, alpha=0.05, hidden_layer_sizes=(256, 128);, score=0.430 total time=  27.8s
+[CV 1/3] END activation=tanh, alpha=0.05, hidden_layer_sizes=(100,);, score=0.420 total time=  11.0s
+[CV 2/3] END activation=tanh, alpha=0.05, hidden_layer_sizes=(256, 128);, score=0.419 total time=  24.6s
+[CV 2/3] END activation=tanh, alpha=0.1, hidden_layer_sizes=(128, 64);, score=0.422 total time=  23.9s
+[CV 3/3] END activation=relu, alpha=0.05, hidden_layer_sizes=(100,);, score=0.418 total time=   9.8s
+[CV 2/3] END activation=relu, alpha=0.05, hidden_layer_sizes=(128, 64);, score=0.432 total time=  16.8s
+[CV 3/3] END activation=relu, alpha=0.1, hidden_layer_sizes=(128, 64);, score=0.430 total time=  10.2s
+[CV 2/3] END activation=tanh, alpha=0.01, hidden_layer_sizes=(128, 64);, score=0.424 total time=  24.3s
+[CV 2/3] END activation=tanh, alpha=0.1, hidden_layer_sizes=(100,);, score=0.423 total time=  11.6s
+[CV 3/3] END activation=tanh, alpha=0.1, hidden_layer_sizes=(128, 64);, score=0.423 total time=  14.9s
+[CV 3/3] END activation=relu, alpha=0.01, hidden_layer_sizes=(256, 128);, score=0.422 total time=  27.8s
+[CV 2/3] END activation=relu, alpha=0.1, hidden_layer_sizes=(256, 128);, score=0.431 total time=  19.5s
+[CV 3/3] END activation=tanh, alpha=0.01, hidden_layer_sizes=(100,);, score=0.416 total time=  17.4s
+[CV 3/3] END activation=tanh, alpha=0.05, hidden_layer_sizes=(128, 64);, score=0.413 total time=  15.8s
+[CV 2/3] END activation=tanh, alpha=0.1, hidden_layer_sizes=(256, 128);, score=0.420 total time=  23.2s
+[CV 3/3] END activation=relu, alpha=0.01, hidden_layer_sizes=(128, 64);, score=0.429 total time=  16.3s
+[CV 2/3] END activation=relu, alpha=0.1, hidden_layer_sizes=(100,);, score=0.422 total time=   9.2s
+[CV 1/3] END activation=relu, alpha=0.1, hidden_layer_sizes=(128, 64);, score=0.420 total time=  17.3s
+[CV 2/3] END activation=tanh, alpha=0.01, hidden_layer_sizes=(100,);, score=0.420 total time=  10.8s
+[CV 1/3] END activation=tanh, alpha=0.05, hidden_layer_sizes=(256, 128);, score=0.412 total time=  34.8s
+[CV 3/3] END activation=relu, alpha=0.01, hidden_layer_sizes=(100,);, score=0.419 total time=  10.1s
+[CV 2/3] END activation=relu, alpha=0.01, hidden_layer_sizes=(128, 64);, score=0.425 total time=  17.1s
+[CV 1/3] END activation=relu, alpha=0.1, hidden_layer_sizes=(100,);, score=0.422 total time=  13.2s
+[CV 2/3] END activation=relu, alpha=0.1, hidden_layer_sizes=(128, 64);, score=0.431 total time=  11.8s
+[CV 3/3] END activation=tanh, alpha=0.01, hidden_layer_sizes=(256, 128);, score=0.418 total time=  34.1s
+[CV 3/3] END activation=tanh, alpha=0.1, hidden_layer_sizes=(256, 128);, score=0.416 total time=  42.3s
+[CV 1/3] END activation=relu, alpha=0.1, hidden_layer_sizes=(256, 128);, score=0.421 total time=  23.9s
+[CV 1/3] END activation=tanh, alpha=0.01, hidden_layer_sizes=(256, 128);, score=0.411 total time=  37.5s
+[CV 1/3] END activation=relu, alpha=0.01, hidden_layer_sizes=(100,);, score=0.422 total time=  20.3s
+[CV 1/3] END activation=relu, alpha=0.05, hidden_layer_sizes=(100,);, score=0.420 total time=  23.4s
+[CV 3/3] END activation=relu, alpha=0.1, hidden_layer_sizes=(256, 128);, score=0.431 total time=  19.5s
+
+[Done] exited with code=0 in 123.276 seconds

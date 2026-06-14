@@ -1,0 +1,47 @@
+============================================================
+HYPERPARAMETER OPTIMIZATION (Grid Search)
+Vector Method: Pre-computed BERT Embeddings (Dense)
+[SYSTEM] Live output is also being saved to: output_bert_1.txt
+============================================================
+
+Loading dataset labels...
+Loading data from D:\University and Studies\Computer Science\26L\EARIN\Project\Project-main\dataset\my_50k_reviews.csv...
+Splitting data into train and test sets...
+Loading pre-computed BERT embeddings from disk...
+BERT Training Data Shape: (40000, 384)
+
+Initializing GridSearchCV...
+Grid configurations to test: 18
+Cross-validation folds: 3
+--------------------------------------------------
+
+Fitting 3 folds for each of 18 candidates, totalling 54 fits
+
+============================================================
+GRID SEARCH COMPLETED (BERT)!
+============================================================
+Best cross-validation accuracy: 0.4278
+
+BEST PARAMETERS FOUND:
+ - activation: relu
+ - alpha: 0.1
+ - hidden_layer_sizes: (256, 128)
+
+============================================================
+FINAL EVALUATION ON UNSEEN TEST DATA (BERT)
+============================================================
+
+Final Test Accuracy: 0.4286
+
+              precision    recall  f1-score   support
+
+         1.0       0.49      0.61      0.54      2000
+         2.0       0.35      0.39      0.37      2000
+         3.0       0.36      0.23      0.28      2000
+         4.0       0.38      0.32      0.35      2000
+         5.0       0.50      0.60      0.55      2000
+
+    accuracy                           0.43     10000
+   macro avg       0.42      0.43      0.42     10000
+weighted avg       0.42      0.43      0.42     10000
+

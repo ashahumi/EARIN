@@ -1,0 +1,76 @@
+Splitting data into train and test sets...
+
+Preparing text: KEEPING stop-words for BERT (Standard)...
+Found saved BERT embeddings (bert_train.npy)! Loading from disk (Instantly)...
+
+========================================
+MAIN EXPERIMENTS (Testing with BERT Embeddings)
+========================================
+
+--- Training Logistic Regression (BERT) ---
+Logistic Regression (BERT) Accuracy: 0.4208
+              precision    recall  f1-score   support
+
+         1.0       0.50      0.57      0.53      2000
+         2.0       0.36      0.34      0.35      2000
+         3.0       0.34      0.28      0.31      2000
+         4.0       0.37      0.35      0.36      2000
+         5.0       0.50      0.57      0.53      2000
+
+    accuracy                           0.42     10000
+   macro avg       0.41      0.42      0.42     10000
+weighted avg       0.41      0.42      0.42     10000
+
+
+--- Training Random Forest (BERT) ---
+Random Forest (BERT) Accuracy: 0.4027
+              precision    recall  f1-score   support
+
+         1.0       0.47      0.56      0.51      2000
+         2.0       0.38      0.35      0.36      2000
+         3.0       0.34      0.23      0.28      2000
+         4.0       0.34      0.33      0.33      2000
+         5.0       0.45      0.54      0.49      2000
+
+    accuracy                           0.40     10000
+   macro avg       0.39      0.40      0.39     10000
+weighted avg       0.39      0.40      0.39     10000
+
+
+--- Training MLP (Neural Network) (BERT) ---
+MLP (Neural Network) (BERT) Accuracy: 0.4211
+              precision    recall  f1-score   support
+
+         1.0       0.50      0.57      0.53      2000
+         2.0       0.36      0.40      0.37      2000
+         3.0       0.35      0.22      0.27      2000
+         4.0       0.37      0.31      0.34      2000
+         5.0       0.48      0.61      0.54      2000
+
+    accuracy                           0.42     10000
+   macro avg       0.41      0.42      0.41     10000
+weighted avg       0.41      0.42      0.41     10000
+
+
+========================================
+ABLATION STUDY: Does removing stop-words hurt BERT? (Using best model: MLP (Neural Network))
+========================================
+
+Preparing text: REMOVING stop-words for BERT...
+Found saved BERT embeddings (bert_train_no_stop.npy)! Loading from disk (Instantly)...
+
+--- Training MLP (Neural Network) (Stop-words REMOVED) ---
+
+--- Training MLP (Neural Network) (No Stopwords) ---
+MLP (Neural Network) (No Stopwords) Accuracy: 0.4099
+              precision    recall  f1-score   support
+
+         1.0       0.47      0.63      0.54      2000
+         2.0       0.36      0.35      0.35      2000
+         3.0       0.37      0.12      0.18      2000
+         4.0       0.34      0.48      0.40      2000
+         5.0       0.49      0.48      0.49      2000
+
+    accuracy                           0.41     10000
+   macro avg       0.41      0.41      0.39     10000
+weighted avg       0.41      0.41      0.39     10000

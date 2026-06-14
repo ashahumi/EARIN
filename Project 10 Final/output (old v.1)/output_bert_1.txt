@@ -1,0 +1,13 @@
+============================================================
+HYPERPARAMETER OPTIMIZATION (Grid Search)
+Vector Method: Pre-computed BERT Embeddings (Dense)
+[SYSTEM] Live output is also being saved to: output_bert_1.txt
+============================================================
+
+Loading dataset labels...
+Loading data from D:\University and Studies\Computer Science\26L\EARIN\Project\dataset\my_50k_reviews.csv...
+Splitting data into train and test sets...
+Loading pre-computed BERT embeddings from disk...
+
+[ERROR] Could not find bert_train.npy or bert_test.npy.
+Please update the paths in the code to point to your saved BERT .npy files.

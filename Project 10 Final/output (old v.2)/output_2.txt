@@ -1,0 +1,16 @@
+============================================================
+HYPERPARAMETER OPTIMIZATION (Grid Search)
+Model: TF-IDF + Multi-Layer Perceptron (MLP)
+============================================================
+
+Loading dataset...
+Loading data from D:\University and Studies\Computer Science\26L\EARIN\Project\dataset\my_50k_reviews.csv...
+Splitting data into train and test sets...
+Applying base text cleaning (lowercasing, removing punctuation)...
+
+Initializing GridSearchCV...
+Grid configurations to test: 144
+Cross-validation folds: 3
+--------------------------------------------------
+
+Fitting 3 folds for each of 144 candidates, totalling 432 fits
